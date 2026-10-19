@@ -1,0 +1,129 @@
+@media (max-width:1199.98px) {
+    .main-nav {
+        gap: 1.6rem
+    }
+}
+
+@media (max-width:991.98px) {
+    .hero {
+        min-height: 0;
+        align-items: flex-end;
+        background-position: 70% center
+    }
+
+    .hero::before {
+        background: linear-gradient(180deg, rgba(245, 241, 232, .2) 0%, rgba(245, 241, 232, .7) 45%, var(--cream) 85%)
+    }
+
+    .hero .container-xl {
+        padding-top: min(70vw, 380px);
+        padding-bottom: 2.5rem
+    }
+
+    .logo {
+        font-size: 1.25rem
+    }
+
+    .banner {
+        background-attachment: scroll
+    }
+}
+
+@media (max-width:767.98px) {
+    .cat-card {
+        aspect-ratio: 16/11
+    }
+
+    .cat-text {
+        padding: 1.3rem
+    }
+
+    .foot-bottom {
+        font-size: .72rem;
+        gap: 1rem
+    }
+}
+
+@media (max-width:575.98px) {
+    .announce {
+        font-size: .6rem;
+        letter-spacing: .16em
+    }
+
+    .logo {
+        font-size: 1.05rem;
+        letter-spacing: .16em
+    }
+
+    #productGrid>.col-6 {
+        padding-left: 6px;
+        padding-right: 6px
+    }
+
+    .p-body h3 {
+        font-size: .72rem;
+        letter-spacing: .06em
+    }
+
+    .p-body p {
+        font-size: .75rem
+    }
+
+    .price {
+        font-size: 1.1rem
+    }
+
+    .add-btn {
+        transform: none;
+        position: static;
+        width: 100%;
+        margin-top: .4rem;
+        padding: .7rem .3rem;
+        font-size: .62rem;
+        letter-spacing: .12em
+    }
+
+    .p-img {
+        overflow: visible;
+        aspect-ratio: auto
+    }
+
+    .p-img img {
+        aspect-ratio: 1/1.1;
+        display: block
+    }
+
+    .news-form {
+        flex-direction: column;
+        gap: .7rem
+    }
+
+    .news-form input {
+        border-right: 1px solid var(--beige)
+    }
+
+    .btn-aurel {
+        padding: 1rem 1.6rem
+    }
+
+    .search-form .btn-aurel {
+        display: none
+    }
+}
+
+@media (max-width:374.98px) {
+    .logo {
+        font-size: .9rem;
+        letter-spacing: .1em
+    }
+
+    .icon-btn {
+        width: 40px
+    }
+}
+
+@media (min-width:1600px) {
+    .container-xl {
+        max-width: 1440px
+    }
+}

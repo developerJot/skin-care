@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<he>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AUREL BOTANICA | Luxury Botanical Skincare &amp; Fragrance</title>
+    <meta name="description"
+        content="Pure botanical skincare, body rituals and signature fragrances, crafted for a more conscious tomorrow.">
+    <meta property="og:title" content="AUREL BOTANICA">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+</he <body>
+<div class="announce">FREE SHIPPING ON ORDERS OVER $75</div>
+
+<header class="site-header" id="header">
+    <div class="container-xl d-flex align-items-center justify-content-between">
+        <button class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+            aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        <a href="#top" class="logo">AUREL <span>BOTANICA</span></a>
+        <nav class="d-none d-lg-flex main-nav" aria-label="Main">
+            <a href="#categories">Shop</a><a href="#bestsellers">Rituals</a><a href="#story">Our Story</a><a
+                href="#newsletter">Journal</a>
+        </nav>
+        <div class="d-flex gap-1">
+            <button class="icon-btn" id="openSearch" aria-label="Search"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+            <a class="icon-btn d-none d-sm-inline-flex" href="#" aria-label="Account (coming soon)"><i
+                    class="fa-regular fa-user"></i></a>
+            <button class="icon-btn position-relative" id="openCart" aria-label="Open cart"><i
+                    class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+        </div>
+    </div>
+</header>
+
+<div class="offcanvas offcanvas-start mobile-nav" id="mobileNav" tabindex="-1">
+    <div class="offcanvas-header"><span class="logo">AUREL <span>BOTANICA</span></span><button class="icon-btn"
+            data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+    <div class="offcanvas-body d-flex flex-column">
+        <a href="#categories" data-bs-dismiss="offcanvas">Shop</a><a href="#bestsellers"
+            data-bs-dismiss="offcanvas">Rituals</a><a href="#story" data-bs-dismiss="offcanvas">Our Story</a><a
+            href="#newsletter" data-bs-dismiss="offcanvas">Journal</a>
+    </div>
+</div>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <button class="icon-btn close-x" id="closeSearch" aria-label="Close search"><i
+            class="fa-solid fa-xmark"></i></button>
+    <form id="searchForm" class="search-form"><input type="search" id="searchInput"
+            placeholder="Search fragrances, skincare, rituals" aria-label="Search"><button class="btn-aurel"
+            type="submit">Search</button></form>
+    <p class="search-note" id="searchNote"></p>
+</div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="cart-head">
+        <h3>Your Bag</h3><button class="icon-btn" id="closeCart" aria-label="Close cart"><i
+                class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-foot">
+        <div class="d-flex justify-content-between mb-3"><span>Subtotal</span><strong id="cartTotal">$0.00</strong>
+        </div><button class="btn-aurel w-100" type="button" id="checkoutBtn">Checkout</button>
+    </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+
+<main id="top">
+    <section class="hero" data-img="hero">
+        <div class="container-xl">
+            <div class="hero-copy">
+                <h1><span class="line">NATURE,</span><span class="line">REIMAGINED.</span></h1>
+                <p class="hero-sub">Pure botanicals. Timeless rituals. Crafted for a more conscious tomorrow.</p>
+                <a href="#bestsellers" class="btn-aurel">Discover our collection</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="container-xl">
+            <div class="row g-3 g-lg-4">
+                <div class="col-12 col-md-4"><a href="#" class="cat-card reveal" data-img="cat1">
+                        <div class="cat-text">
+                            <h2>Fragrance</h2>
+                            <p>Signature scents</p>
+                        </div>
+                    </a></div>
+                <div class="col-12 col-md-4"><a href="#" class="cat-card reveal" data-img="cat2">
+                        <div class="cat-text">
+                            <h2>Skincare</h2>
+                            <p>Pure &amp; potent</p>
+                        </div>
+                    </a></div>
+                <div class="col-12 col-md-4"><a href="#" class="cat-card reveal" data-img="cat3">
+                        <div class="cat-text">
+                            <h2>Body Rituals</h2>
+                            <p>Nourish &amp; restore</p>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="philosophy" data-img="leaves">
+        <div class="container-xl">
+            <div class="row align-items-center">
+                <div class="col-lg-7 reveal">
+                    <h2>A QUIETER KIND OF LUXURY</h2>
+                    <p>We believe beauty needn't be loud. Each formula begins with responsibly grown botanicals, is
+                        made in small batches, and is finished with restraint, so what remains is simply what works.
+                    </p>
+                    <a href="#story" class="link-line">Our story</a>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-end">
+                    <div class="badge-circle"><span>Small<br>batch<br>botanicals</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestsellers" id="bestsellers">
+        <div class="container-xl">
+            <h2 class="section-title reveal">Bestsellers</h2>
+            <div class="row g-3 g-lg-4" id="productGrid"></div>
+        </div>
+    </section>
+
+    <section class="story" id="story">
+        <div class="row g-0">
+            <div class="col-lg-6 story-img" data-img="woman" role="img"
+                aria-label="Woman standing in warm natural sunlight"></div>
+            <div class="col-lg-6 story-copy reveal">
+                <span class="label">Our story</span>
+                <h2>ROOTED IN NATURE, MADE FOR YOU</h2>
+                <p>Aurel began in a small garden with a simple idea: skincare should feel as calm as the plants it
+                    comes from. Today we still grow, harvest and blend with the same patience.</p>
+                <a href="#" class="btn-aurel btn-outline">Learn more</a>
+                <i class="fa-solid fa-leaf deco-leaf" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner" data-img="coast" data-parallax>
+        <div class="container-xl text-center reveal">
+            <h2>BEAUTY IN HARMONY WITH NATURE</h2>
+            <p>Discover rituals inspired by the coast, the forest and the quiet in between.</p>
+            <a href="#categories" class="btn-aurel btn-light-o">Shop now</a>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <div class="container-xl text-center reveal">
+            <h2>JOIN OUR JOURNEY</h2>
+            <p>Early access to new releases, ritual guides and 10% off your first order.</p>
+            <form id="newsForm" class="news-form" novalidate>
+                <input type="email" id="newsEmail" placeholder="Your email address" aria-label="Email address" required>
+                <button class="btn-aurel" type="submit">Subscribe</button>
+            </form>
+            <p class="news-msg" id="newsMsg" role="status"></p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container-xl">
+        <div class="row g-4">
+            <div class="col-lg-4"><a href="#top" class="logo">AUREL <span>BOTANICA</span></a>
+                <p class="mt-3">Botanical skincare and fragrance, made in small batches for a more conscious
+                    tomorrow.</p>
+                <div class="social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a
+                        href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#"
+                        aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a><a href="#"
+                        aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Fragrance</a></li>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Body Rituals</a></li>
+                    <li><a href="#">Gifts</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Ingredients</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Journal</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3">
+                <h3>Customer care</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping &amp; returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Track order</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-bottom"><span>&copy; 2026 Aurel Botanica. All rights reserved.</span><button class="icon-btn"
+                id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
